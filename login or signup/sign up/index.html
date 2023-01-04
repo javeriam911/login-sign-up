@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <div>
+            <div><label>user name : </label> <input type="text" id="userName"></label></div><br>
+            <div><label> E-mail :</label> <input type="e-mail" required id="e-mail"></div><br>
+            <div><label> password :</label><input type="password" id="password"></label></div><br>
+            <button onclick="signup()">register
+            </button>
+        </div>
+    </fieldset>
+    <!-- <a href="/login or signup/log in/index.html">register</a> -->
+</body>
+<script>
+    let userName = document.getElementById("userName");
+    let E_mail = document.getElementById("e-mail");
+    let password = document.getElementById("password");
+
+    function signup() {
+
+
+
+
+        let myArr = [{ userName: userName.value }, { E_mail: E_mail.value }, { password: password.value }];
+        console.log(myArr)
+
+
+    }
+</script>
+
+</html>
